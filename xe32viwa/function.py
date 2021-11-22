@@ -15,7 +15,7 @@ def imshowResized(X, imgresize=None):
 	
 	
 	if imgresize != None and len(imgresize) == 2:	
-		resized = X.resize(imgresize, Image.ANTIALIAS)
+		resized = X.resize((imgresize), Image.ANTIALIAS)
 	else:
 		resized = X
 	
